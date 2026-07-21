@@ -1,0 +1,195 @@
+{
+  "acmm_level": 5,
+  "allowed_auto_merge_paths": [
+    "**/*.spec.*",
+    "**/*.test.*",
+    "**/*_test.go",
+    "test/**",
+    "tests/**"
+  ],
+  "allowed_auto_merge_risk": [
+    0
+  ],
+  "allowed_repair_paths": [
+    "src/**",
+    "**/src/**",
+    "public/**",
+    "**/public/**",
+    "index.html",
+    "**/index.html",
+    "visual-hive.config.yaml",
+    "scripts/testing/**",
+    "**/scripts/testing/**",
+    "test/**",
+    "tests/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/*_test.go"
+  ],
+  "automation": "repair-pr",
+  "coverage": "essential",
+  "default_branch": "main",
+  "distribution_manifest_sha256": "",
+  "execution_mode": "local",
+  "hive_commit": "",
+  "hive_release_repository": "",
+  "hive_release_version": "",
+  "hosted_controller_protocol": 0,
+  "hosted_schedule": "",
+  "hosted_state_branch": "hive/state-1306858970",
+  "hosted_workflow_sha256": "",
+  "max_active_issues": 1,
+  "max_repair_attempts": 2,
+  "provider": "codex",
+  "repository": "DavidDiaz0317/console-visual-hive-trial-20260720-v2",
+  "repository_id": "1306858970",
+  "run_interval_seconds": 60,
+  "schema_version": "hive.integrated-repository-config.v3",
+  "setup_authorization_actor_id": 183157248,
+  "test_commands": [
+    [
+      "go",
+      "test",
+      "./..."
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "build"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "build-storybook"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "lint"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "lint:check"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "postbuild"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:card-registry"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:card-toolbar"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:card-wrapper"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:cluster-groups-forms"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:consistency"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:consistency:strict"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:coverage"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:drilldown-gaps"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:drilldown-views"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:netlify-github-cluster"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:netlify-identity"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:netlify-missions-analytics"
+    ],
+    [
+      "npm",
+      "--prefix",
+      "web",
+      "run",
+      "test:rewards-badge"
+    ]
+  ],
+  "visual_hive": true,
+  "visual_hive_config_digest": "b9b4bac654b2d6a0855100e030d871fabca59c1cb7a3c7d0a7bdef7821e810a9",
+  "visual_hive_ref": "0eba5f08957b41c6ab9945a079fdba82ee1b3053",
+  "visual_hive_repository": "DavidDiaz0317/visual-hive"
+}
